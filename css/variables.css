@@ -1,0 +1,87 @@
+/* ==========================================================================
+   DESIGN TOKENS & SYSTEM VARIABLES
+   Brand Identity: Lusion-inspired Dark Plum & Royal Purple / Electric Violet
+   ========================================================================== */
+
+:root {
+  /* Brand Core Palette */
+  --bg-primary: #100D14;          /* Dark Plum / Near Black */
+  --bg-secondary: #16121D;        /* Elevated Plum Surface */
+  --bg-surface: #1C1725;          /* Card & Container Background */
+  --bg-surface-elevated: #241D30; /* Dropdown & Hover Surface */
+  --bg-glass: rgba(22, 18, 29, 0.72);
+  --bg-glass-card: rgba(28, 23, 37, 0.68);
+
+  /* Primary Accent & Brand Energy */
+  --purple-royal: #5425D8;        /* Royal Purple (Primary Brand Accent) */
+  --purple-electric: #B52DFF;     /* Electric Violet (Highlights & Depth) */
+  --magenta-vibrant: #F044C5;     /* Magenta (Gradients & Key Interaction) */
+  --silver-neutral: #C5C5D0;      /* Silver (Secondary Details & Structure) */
+  --white-soft: #F7F5FA;          /* Soft White (Primary Typography) */
+
+  /* Semantic Typography Colors */
+  --text-primary: #F7F5FA;
+  --text-secondary: rgba(247, 245, 250, 0.72);
+  --text-muted: rgba(197, 197, 208, 0.55);
+  --text-silver: #C5C5D0;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(197, 197, 208, 0.12);
+  --border-medium: rgba(197, 197, 208, 0.22);
+  --border-accent: rgba(181, 45, 255, 0.38);
+  --border-focus: #B52DFF;
+
+  /* Brand Gradients */
+  --grad-primary: linear-gradient(135deg, #5425D8 0%, #B52DFF 50%, #F044C5 100%);
+  --grad-subtle: linear-gradient(135deg, rgba(84, 37, 216, 0.18) 0%, rgba(181, 45, 255, 0.08) 100%);
+  --grad-surface: linear-gradient(180deg, rgba(36, 29, 48, 0.5) 0%, rgba(22, 18, 29, 0.8) 100%);
+  --grad-glow: radial-gradient(circle at 50% 50%, rgba(181, 45, 255, 0.22) 0%, rgba(84, 37, 216, 0.05) 50%, transparent 80%);
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, SFMono-Regular, monospace;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Scale (Fluid with clamp) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.3vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
+  --text-xl: clamp(1.35rem, 1.25rem + 0.6vw, 1.55rem);
+  --text-2xl: clamp(1.75rem, 1.55rem + 1vw, 2.125rem);
+  --text-3xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
+  --text-4xl: clamp(2.85rem, 2.35rem + 2.5vw, 4.25rem);
+  --text-hero: clamp(3.25rem, 2.6rem + 4.5vw, 6.5rem);
+
+  /* Elevation Shadows & Ambient Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 35px -5px rgba(84, 37, 216, 0.2);
+  --shadow-accent-glow: 0 0 30px rgba(181, 45, 255, 0.35);
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions & Animation Timings */
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Spacing */
+  --space-unit: 8px;
+  --section-padding-y: clamp(72px, 8vw, 136px);
+  --container-max-width: 1320px;
+  --container-padding-x: clamp(20px, 4vw, 48px);
+
+  /* Z-Indices */
+  --z-canvas: 0;
+  --z-base: 1;
+  --z-content: 2;
+  --z-nav: 50;
+  --z-modal: 100;
+  --z-cursor: 999;
+}

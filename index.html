@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swera — UI/UX Designer &amp; Web Developer | Digital Experience Portfolio</title>
+  <meta name="description" content="Personal portfolio of Swera, a UI/UX Designer and Web Developer crafting immersive, human-centered digital products and high-performance websites." />
+  <meta name="theme-color" content="#100D14" />
+  <meta name="author" content="Swera" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Swera — UI/UX Designer &amp; Web Developer" />
+  <meta property="og:description" content="Bridging human-centered UI/UX strategy with high-performance web engineering to build memorable digital products." />
+  <meta property="og:image" content="assets/images/aura-fintech.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Swera — UI/UX Designer &amp; Web Developer" />
+  <meta name="twitter:description" content="Thoughtful Design. Exceptional Digital Experiences." />
+  <meta name="twitter:image" content="assets/images/aura-fintech.jpg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Swera",
+    "jobTitle": "UI/UX Designer and Web Developer",
+    "description": "Senior UI/UX Designer and Web Developer specializing in user-centered digital products and bespoke web engineering.",
+    "knowsAbout": ["UI/UX Design", "Web Development", "Design Systems", "Figma", "HTML5", "CSS3", "JavaScript", "Interaction Design", "Accessibility"]
+  }
+  </script>
+
+  <!-- Three.js 3D Graphics Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+
+  <!-- Skip Navigation Link for Screen Readers -->
+  <a href="#main-content" class="visually-hidden">Skip to main content</a>
+
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-mark" aria-label="Swera Portfolio Homepage">
+        <div class="brand-logo-icon">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SWERA</span>
+          <span class="brand-role">UI/UX · DEVELOPER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#trust" class="nav-link">Standards</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Interactive Web Audio FX Toggle -->
+        <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle interaction audio feedback">
+          <svg class="sound-wave-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="sound-btn-text">SOUND: OFF</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#work" class="mobile-nav-link">Work</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#trust" class="mobile-nav-link">Standards</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>Available for select Q4 projects</span>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 01: HERO / PERSONAL BRAND
+         ---------------------------------------------------------------------- -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="hero-layout-grid">
+          <!-- Left Column: Typography & CTAs -->
+          <div class="hero-text-col">
+            <div class="hero-status-bar">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Available for select projects Q4 / 2026</span>
+              </div>
+            </div>
+
+            <div class="hero-title-group">
+              <span class="hero-name-label">UI/UX DESIGNER · WEB DEVELOPER</span>
+              <h1 id="hero-title" class="hero-main-title">SAWERA</h1>
+              <p class="hero-headline">
+                Thoughtful Design. <span class="gradient-text">Exceptional Digital Experiences.</span>
+              </p>
+            </div>
+
+            <p class="hero-description">
+              Hi, I'm Sawera Saghir. Bridging human-centered UI/UX strategy with modern web engineering. I design and build distinctive, accessible, and performant digital products that transform complex user journeys into intuitive experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary btn-lg">
+                Explore My Work
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-lg">
+                Start a Project
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Verified Professional Metrics Strip -->
+            <div class="hero-metrics-strip" aria-label="Key Professional Statistics">
+              <div class="metric-item">
+                <span class="metric-number">3+</span>
+                <span class="metric-label">Years Experience</span>
+                <span class="metric-subtext" style="display:block; font-size: 11px; color: var(--text-muted); margin-top: 2px;">In modern web &amp; UI design</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">15+</span>
+                <span class="metric-label">Projects Completed</span>
+                <span class="metric-subtext" style="display:block; font-size: 11px; color: var(--text-muted); margin-top: 2px;">Custom web solutions &amp; designs</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">99%</span>
+                <span class="metric-label">Client Satisfaction</span>
+                <span class="metric-subtext" style="display:block; font-size: 11px; color: var(--text-muted); margin-top: 2px;">Quality code &amp; aesthetic designs</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">On-Time Delivery</span>
+                <span class="metric-subtext" style="display:block; font-size: 11px; color: var(--text-muted); margin-top: 2px;">Fast turnaround &amp; clean code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Seamless Full-Body Interactive Character (Integrated into background) -->
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-card-container">
+              <!-- Ambient Character Aura & Ground Shadow -->
+              <div class="avatar-ambient-aura" aria-hidden="true"></div>
+              <div class="avatar-ground-shadow" aria-hidden="true"></div>
+
+              <!-- 3D Character Mesh & Full-Body Image -->
+              <div id="sawera-static-avatar-mesh" class="avatar-card-mesh">
+                <img id="sawera-main-avatar-img" src="assets/images/sawera-fullbody-avatar.png" alt="Sawera Saghir - 3D Full-Body Character with Sneakers" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 02: SELECTED WORK (EDITORIAL ART-DIRECTED)
+         ---------------------------------------------------------------------- -->
+    <section id="work" class="section-wrapper work-section" aria-labelledby="work-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Selected Work</span>
+          <h2 id="work-heading" class="section-title">Crafted for Impact &amp; Usability</h2>
+          <p class="section-description">
+            A curated selection of genuine digital products, complex web applications, and enterprise design systems engineered from concept to launch.
+          </p>
+        </header>
+
+        <div class="projects-editorial-list">
+
+          <!-- PROJECT 01: AI For Teachers (Client Work) -->
+          <article class="project-item" aria-labelledby="project-title-1">
+            <div class="project-info">
+              <div class="project-meta-header">
+                <span class="project-index">01</span>
+                <span class="badge-chip" style="background: rgba(240, 68, 197, 0.15); border-color: rgba(240, 68, 197, 0.4); color: var(--magenta-vibrant);">Client Work · Live</span>
+                <span class="project-category">EdTech &amp; AI Web Platform</span>
+              </div>
+              <h3 id="project-title-1" class="project-title">AI For Teachers — Empower Your Teaching</h3>
+              <p class="project-summary">
+                An interactive web application and workshop platform empowering educators with AI tools: automated lesson planning, prompt engineering formula, interactive quizzes, and instant student personalization.
+              </p>
+              <div class="project-role-box">
+                <span class="project-role-label">Role &amp; Deliverables</span>
+                <span class="project-role-value">UI/UX Design &amp; Full-Stack Web Development</span>
+              </div>
+              <div class="project-capabilities">
+                <span class="badge-chip">Generative AI</span>
+                <span class="badge-chip">Workshop UX</span>
+                <span class="badge-chip">Interactive Platform</span>
+                <span class="badge-chip">WhatsApp Funnels</span>
+              </div>
+              <div class="project-action-links">
+                <button class="btn btn-primary btn-sm" data-case-study-id="ai-for-teachers">
+                  View Full Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://ai-for-teachers-gold.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  Visit Live Site
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-media-wrapper" data-case-study-id="ai-for-teachers" tabindex="0" role="button" aria-label="Open AI For Teachers Case Study">
+              <img src="assets/images/ai-for-teachers.jpeg" alt="AI For Teachers Web Application Interface" class="project-media-img" loading="lazy" />
+              <div class="project-overlay-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Explore Case Study</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Stack Grow (Client Work) -->
+          <article class="project-item reverse" aria-labelledby="project-title-2">
+            <div class="project-info">
+              <div class="project-meta-header">
+                <span class="project-index">02</span>
+                <span class="badge-chip" style="background: rgba(240, 68, 197, 0.15); border-color: rgba(240, 68, 197, 0.4); color: var(--magenta-vibrant);">Client Work · Live</span>
+                <span class="project-category">EdTech &amp; Developer Academy</span>
+              </div>
+              <h3 id="project-title-2" class="project-title">Stack Grow | Future Ready Learning</h3>
+              <p class="project-summary">
+                A premium course academy and developer training platform featuring full-stack engineering tracks (Flutter + AI, Python, Frontend Sprint) with interactive course outlines and WhatsApp enrollment.
+              </p>
+              <div class="project-role-box">
+                <span class="project-role-label">Role &amp; Deliverables</span>
+                <span class="project-role-value">Lead UI/UX Designer &amp; Frontend Architect</span>
+              </div>
+              <div class="project-capabilities">
+                <span class="badge-chip">EdTech UX</span>
+                <span class="badge-chip">Course Explorer</span>
+                <span class="badge-chip">Mobile Optimization</span>
+                <span class="badge-chip">High-Performance</span>
+              </div>
+              <div class="project-action-links">
+                <button class="btn btn-primary btn-sm" data-case-study-id="stack-grow">
+                  View Full Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://stack-grow.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  Visit Live Site
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-media-wrapper" data-case-study-id="stack-grow" tabindex="0" role="button" aria-label="Open Stack Grow Case Study">
+              <img src="assets/images/stack-grow.jpeg" alt="Stack Grow Future Ready Learning Academy Platform" class="project-media-img" loading="lazy" />
+              <div class="project-overlay-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Explore Case Study</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Maven Consulting & Design Ltd. (Client Work) -->
+          <article class="project-item" aria-labelledby="project-title-3">
+            <div class="project-info">
+              <div class="project-meta-header">
+                <span class="project-index">03</span>
+                <span class="badge-chip" style="background: rgba(240, 68, 197, 0.15); border-color: rgba(240, 68, 197, 0.4); color: var(--magenta-vibrant);">Client Work · Live</span>
+                <span class="project-category">Digital Strategy &amp; Growth Advisory</span>
+              </div>
+              <h3 id="project-title-3" class="project-title">Maven Consulting &amp; Design Ltd.</h3>
+              <p class="project-summary">
+                A Canadian strategic growth and digital advisory platform built to convert enterprise traffic into qualified consultations across trades, food &amp; beverage, and service sectors.
+              </p>
+              <div class="project-role-box">
+                <span class="project-role-label">Role &amp; Deliverables</span>
+                <span class="project-role-value">UI/UX Strategy &amp; Full-Stack Web Development</span>
+              </div>
+              <div class="project-capabilities">
+                <span class="badge-chip">Conversion Strategy</span>
+                <span class="badge-chip">B2B UI/UX</span>
+                <span class="badge-chip">Interactive Funnels</span>
+                <span class="badge-chip">Responsive Web</span>
+              </div>
+              <div class="project-action-links">
+                <button class="btn btn-primary btn-sm" data-case-study-id="maven-consulting">
+                  View Full Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://www.mavencd.ca/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  Visit Live Site
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-media-wrapper" data-case-study-id="maven-consulting" tabindex="0" role="button" aria-label="Open Maven Consulting Case Study">
+              <img src="assets/images/maven-consulting.jpeg" alt="Maven Consulting &amp; Design Digital Platform Interface" class="project-media-img" loading="lazy" />
+              <div class="project-overlay-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Explore Case Study</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: G23 Auto Services Ireland (Client Work) -->
+          <article class="project-item reverse" aria-labelledby="project-title-4">
+            <div class="project-info">
+              <div class="project-meta-header">
+                <span class="project-index">04</span>
+                <span class="badge-chip" style="background: rgba(240, 68, 197, 0.15); border-color: rgba(240, 68, 197, 0.4); color: var(--magenta-vibrant);">Client Work · Live</span>
+                <span class="project-category">Automotive Engineering &amp; Diagnostics</span>
+              </div>
+              <h3 id="project-title-4" class="project-title">G23 Auto Services Ireland</h3>
+              <p class="project-summary">
+                A modern digital platform and booking ecosystem for an independent vehicle diagnostics, pre-NCT testing, and precision engineering center in Ashbourne, Ireland.
+              </p>
+              <div class="project-role-box">
+                <span class="project-role-label">Role &amp; Deliverables</span>
+                <span class="project-role-value">Lead Web Designer &amp; Frontend Developer</span>
+              </div>
+              <div class="project-capabilities">
+                <span class="badge-chip">Booking UX</span>
+                <span class="badge-chip">Local SEO</span>
+                <span class="badge-chip">Brand Identity</span>
+                <span class="badge-chip">Service Architecture</span>
+              </div>
+              <div class="project-action-links">
+                <button class="btn btn-primary btn-sm" data-case-study-id="g23-autoservices">
+                  View Full Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://g23autoservices.ie/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  Visit Live Site
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-media-wrapper" data-case-study-id="g23-autoservices" tabindex="0" role="button" aria-label="Open G23 Auto Services Case Study">
+              <img src="assets/images/g23-autoservices.jpeg" alt="G23 Auto Services Ireland Web Application Interface" class="project-media-img" loading="lazy" />
+              <div class="project-overlay-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Explore Case Study</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 04: SERVICES
+         ---------------------------------------------------------------------- -->
+    <section id="services" class="section-wrapper services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Services &amp; Capabilities</span>
+          <h2 id="services-heading" class="section-title">Specialized Digital Craft</h2>
+          <p class="section-description">
+            Transparent, result-oriented offerings designed to turn ambitious ideas into market-ready digital products without handoff gaps.
+          </p>
+        </header>
+
+        <div class="services-grid">
+
+          <!-- SERVICE 01 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <span class="service-number">01</span>
+              <div class="service-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">UI/UX Product Design</h3>
+            <p class="service-description">
+              Human-centered digital product design grounded in user research, behavioral architecture, and high-fidelity interactive prototyping.
+            </p>
+            <div class="service-details-box">
+              <div class="service-detail-title">Key Deliverables</div>
+              <ul class="deliverables-list">
+                <li class="deliverable-item">User Journey Mapping &amp; Wireframing</li>
+                <li class="deliverable-item">High-Fidelity Interface in Figma</li>
+                <li class="deliverable-item">Interactive Clickable Prototypes</li>
+                <li class="deliverable-item">Usability Testing &amp; Heuristics</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-cta-link">
+              Inquire for UI/UX &rarr;
+            </a>
+          </div>
+
+          <!-- SERVICE 02 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <span class="service-number">02</span>
+              <div class="service-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Bespoke Website Design</h3>
+            <p class="service-description">
+              Editorial art direction and immersive web aesthetics crafted to position your brand at the highest level of contemporary digital craft.
+            </p>
+            <div class="service-details-box">
+              <div class="service-detail-title">Key Deliverables</div>
+              <ul class="deliverables-list">
+                <li class="deliverable-item">Original Creative Art Direction</li>
+                <li class="deliverable-item">Custom Visual Composition &amp; Type</li>
+                <li class="deliverable-item">Responsive Breakpoint Systems</li>
+                <li class="deliverable-item">Interactive Micro-Moments</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-cta-link">
+              Inquire for Website Design &rarr;
+            </a>
+          </div>
+
+          <!-- SERVICE 03 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <span class="service-number">03</span>
+              <div class="service-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Modern Web Development</h3>
+            <p class="service-description">
+              Fast, accessible, and semantic frontend engineering built on clean modern web standards with buttery 60fps animations.
+            </p>
+            <div class="service-details-box">
+              <div class="service-detail-title">Key Deliverables</div>
+              <ul class="deliverables-list">
+                <li class="deliverable-item">Semantic HTML5 &amp; Modular CSS</li>
+                <li class="deliverable-item">Modern Vanilla JavaScript &amp; Canvas</li>
+                <li class="deliverable-item">WCAG 2.1 AA Accessibility Standards</li>
+                <li class="deliverable-item">Core Web Vitals &amp; Performance Audit</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-cta-link">
+              Inquire for Development &rarr;
+            </a>
+          </div>
+
+          <!-- SERVICE 04 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <span class="service-number">04</span>
+              <div class="service-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">End-to-End Design-to-Build</h3>
+            <p class="service-description">
+              Seamless turnkey execution from initial product strategy and user experience design through full deployment and launch.
+            </p>
+            <div class="service-details-box">
+              <div class="service-detail-title">Key Deliverables</div>
+              <ul class="deliverables-list">
+                <li class="deliverable-item">Holistic Product Strategy</li>
+                <li class="deliverable-item">Complete UX/UI Production in Figma</li>
+                <li class="deliverable-item">Production Frontend Engineering</li>
+                <li class="deliverable-item">Deployment &amp; Quality Assurance</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-cta-link">
+              Inquire for End-to-End &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 05: ABOUT / EXPERIENCE / EXPERTISE
+         ---------------------------------------------------------------------- -->
+    <section id="about" class="section-wrapper about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">About &amp; Expertise</span>
+          <h2 id="about-heading" class="section-title">Design Grounded in Engineering</h2>
+          <p class="section-description">
+            I believe the best digital products occur when design vision and technical execution work in complete harmony.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Left Column: Narrative Bio -->
+          <div class="about-narrative">
+            <p>
+              Hi, I'm <strong>Swera</strong> — a hybrid UI/UX Designer and Web Developer with over 5 years of experience building products for tech innovators, design-forward brands, and enterprise software teams.
+            </p>
+            <p>
+              Too often, great designs suffer in translation when handed off to development, or engineering lacks the aesthetic empathy needed to craft truly memorable interactions. Because I work across both disciplines, I eliminate that friction entirely.
+            </p>
+            <p>
+              Whether establishing an institutional-grade design token architecture or choreographing 60fps canvas animations, my priority is always the human experience: clear information hierarchy, effortless usability, and accessible aesthetics.
+            </p>
+
+            <div class="about-highlight-box">
+              <div class="about-highlight-text">
+                "Design is not merely what things look like — it is the quiet logic of how intuitively they respond to human intention."
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Skills Matrix -->
+          <div class="skills-matrix">
+            <div class="glass-card skill-category-card">
+              <h3 class="skill-category-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                Design &amp; Strategy
+              </h3>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">UX Strategy</span>
+                <span class="skill-tag">UI Design</span>
+                <span class="skill-tag">Figma Systems</span>
+                <span class="skill-tag">Design Tokens</span>
+                <span class="skill-tag">Interactive Prototyping</span>
+                <span class="skill-tag">Information Architecture</span>
+                <span class="skill-tag">User Research</span>
+                <span class="skill-tag">WCAG 2.1 AA Accessibility</span>
+              </div>
+            </div>
+
+            <div class="glass-card skill-category-card">
+              <h3 class="skill-category-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Web Engineering &amp; Motion
+              </h3>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">Semantic HTML5</span>
+                <span class="skill-tag">Modern CSS3 (Tokens &amp; Grid)</span>
+                <span class="skill-tag">Modern JavaScript (ES6+)</span>
+                <span class="skill-tag">HTML5 Canvas 2D</span>
+                <span class="skill-tag">Core Web Vitals</span>
+                <span class="skill-tag">Fluid Responsive Systems</span>
+                <span class="skill-tag">Git Version Control</span>
+                <span class="skill-tag">Technical SEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Step Workflow Methodology -->
+        <div class="methodology-row">
+          <div class="methodology-header">
+            <span class="section-eyebrow">Working Process</span>
+            <h3 class="section-title">The 5-Step Execution Framework</h3>
+          </div>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">STEP 01</div>
+              <h4 class="step-title">Discover &amp; Define</h4>
+              <p class="step-desc">Uncovering your core business objectives, target audience expectations, and key metrics for success.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">STEP 02</div>
+              <h4 class="step-title">Architecture</h4>
+              <p class="step-desc">Structuring content hierarchy, user flow maps, and wireframe blueprints to ensure intuitive navigation.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">STEP 03</div>
+              <h4 class="step-title">Visual Craft</h4>
+              <p class="step-desc">Applying bespoke typography, sophisticated color palettes, lighting gradients, and high-fidelity systems.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">STEP 04</div>
+              <h4 class="step-title">Engineering</h4>
+              <p class="step-desc">Translating visuals into clean, performant, accessible code with hardware-accelerated motion.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">STEP 05</div>
+              <h4 class="step-title">Test &amp; Launch</h4>
+              <p class="step-desc">Rigorous cross-device testing, contrast verification, performance profiling, and seamless deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 06: TRUST & PROFESSIONAL STANDARDS
+         ---------------------------------------------------------------------- -->
+    <section id="trust" class="section-wrapper trust-section" aria-labelledby="trust-heading">
+      <div class="container">
+        <header class="section-header center">
+          <span class="section-eyebrow">Professional Standards</span>
+          <h2 id="trust-heading" class="section-title">Built on Discipline &amp; Integrity</h2>
+          <p class="section-description">
+            Every engagement follows strict engineering ethics, verified design standards, and transparent collaboration.
+          </p>
+        </header>
+
+        <div class="trust-grid">
+          <div class="trust-pillar-card">
+            <div class="trust-pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="trust-pillar-title">Design System Rigor</h3>
+            <p class="trust-pillar-desc">
+              All UI work is engineered with modular design tokens and strict component hierarchy, guaranteeing clean developer handoff and zero design drift.
+            </p>
+          </div>
+
+          <div class="trust-pillar-card">
+            <div class="trust-pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="trust-pillar-title">Accessibility First (WCAG 2.1)</h3>
+            <p class="trust-pillar-desc">
+              Interfaces are built with semantic HTML landmarks, visible focus rings, high contrast ratios, and complete support for assistive devices.
+            </p>
+          </div>
+
+          <div class="trust-pillar-card">
+            <div class="trust-pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="trust-pillar-title">Transparent Delivery</h3>
+            <p class="trust-pillar-desc">
+              Direct access to Figma staging files, staged web previews, and regular async updates so you always have total clarity on project progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 07: CONTACT / PROJECT INQUIRY
+         ---------------------------------------------------------------------- -->
+    <section id="contact" class="section-wrapper contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left Info Column -->
+          <div class="contact-info-col">
+            <div>
+              <span class="section-eyebrow">Project Inquiry</span>
+              <h2 id="contact-heading" class="contact-title">Let's Create Something Meaningful.</h2>
+            </div>
+            <p class="section-description">
+              Have an upcoming product design challenge, website redesign, or new digital initiative? Share your project details below and I'll respond within 24–48 hours with next steps.
+            </p>
+
+            <div class="contact-direct-links">
+              <!-- Direct WhatsApp / Phone Card -->
+              <a href="https://wa.me/923174804970" target="_blank" rel="noopener noreferrer" class="direct-contact-item">
+                <div class="contact-icon-bubble">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-meta">
+                  <span class="contact-item-label">Phone &amp; WhatsApp</span>
+                  <span class="contact-item-value">+92 317 4804970</span>
+                </div>
+              </a>
+
+              <!-- Direct Email Card -->
+              <a href="mailto:sawerasaghir30@gmail.com" class="direct-contact-item">
+                <div class="contact-icon-bubble">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-meta">
+                  <span class="contact-item-label">Direct Email</span>
+                  <span class="contact-item-value">sawerasaghir30@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Profile Card -->
+              <a href="https://www.linkedin.com/in/sawerasaghir/" target="_blank" rel="noopener noreferrer" class="direct-contact-item">
+                <div class="contact-icon-bubble">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-meta">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-value">linkedin.com/in/sawerasaghir</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="glass-card contact-form-container">
+            <form id="project-inquiry-form" novalidate>
+              <!-- Honeypot Anti-spam field -->
+              <input type="text" name="bot_field" style="display:none;" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required />
+                  <div class="field-error-message"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required />
+                  <div class="field-error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-type" class="form-label">Project Type <span class="required">*</span></label>
+                  <select id="contact-type" class="form-select" required>
+                    <option value="">Select project scope...</option>
+                    <option value="UI/UX Product Design">UI/UX Product Design</option>
+                    <option value="Bespoke Website Design">Bespoke Website Design</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="End-to-End Design & Build">End-to-End Design &amp; Build</option>
+                    <option value="Design System Consulting">Design System Consulting</option>
+                  </select>
+                  <div class="field-error-message"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-budget" class="form-label">Estimated Budget</label>
+                  <select id="contact-budget" class="form-select">
+                    <option value="Flexible / Under Discussion">Flexible / Under Discussion</option>
+                    <option value="$3,000 – $5,000">$3,000 – $5,000</option>
+                    <option value="$5,000 – $10,000">$5,000 – $10,000</option>
+                    <option value="$10,000+">$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Description <span class="required">*</span></label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your product, timeline, goals, and any reference websites..." required></textarea>
+                <div class="field-error-message"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Send Project Inquiry
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-status-alert" class="form-status-alert" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAL DIALOG: CASE STUDY VIEWER
+       ======================================================================== -->
+  <div id="case-study-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-case-study-title" aria-hidden="true">
+    <div id="modal-content-container" class="modal-content-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close case study dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="modal-dynamic-body">
+        <!-- Injected dynamically via js/case-studies.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 08: FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-mark" aria-label="Back to Top">
+          <div class="brand-logo-icon">S</div>
+          <div class="brand-text">
+            <span class="brand-name">SWERA</span>
+            <span class="brand-role">UI/UX · DEVELOPER</span>
+          </div>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#hero" class="footer-nav-link">Home</a>
+          <a href="#work" class="footer-nav-link">Work</a>
+          <a href="#services" class="footer-nav-link">Services</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#trust" class="footer-nav-link">Standards</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top">
+          Back to Top &uarr;
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Swera. All rights reserved. Crafted with clean web standards.
+        </div>
+        <div>
+          Dark Plum / Electric Violet Aesthetic &bull; WCAG 2.1 AA Compliant
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/sound-engine.js"></script>
+  <script src="js/avatar-experience.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/case-studies.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/form-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
